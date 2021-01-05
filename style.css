@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+@font-face {
+    font-family: 'swswregular';
+    src: url('swsw-regular.woff2') format('woff2'),
+         url('swsw-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*@font-face {
+font-family: "CustomFont";
+src: url("https://yoursite.com/css/fonts/CustomFont.eot");
+src: url("https://yoursite.com/css/fonts/CustomFont.woff") format("woff"),
+url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
+url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg");
+}
+*/
+body {
+    background-image: url('bg.png');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    z-index: 0;
+    color:#ffffff;
+    /*font-family: 'Comfortaa', cursive;*/
+    font-family: 'swswregular', cursive;
+}
+
+
+#mainstuff {
+    background-image: url('bg.png');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    
+	position: relative;
+	z-index: 98;
+    margin: 0;
+}
+
+#mainbody {
+	max-width: 900px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: auto;
+	margin-right: auto;
+    text-align: left;
+	z-index: 99;
+	position: relative;
+    
+    /*font-family: 'Comfortaa', cursive;*/
+    font-family: 'swswregular', cursive;
+    font-size: 2vw;
+     color:#ffffff;
+    
+}
+
+
+h1{
+     font-family: 'swswregular', cursive;
+    font-size: 3.2vw;
+    color:#6e1616;
+    margin: 0;
+    text-align: center;
+}
+
+a{
+    color:#7a2259;
+    font-weight: bold;
+}
+
+#gamedescription{
+    text-align: justify;
+}
+#gamedescription h1{
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+#extranotes{
+    font-size: 1.8vw;
+    text-align: center;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.flex-item-characters {
+  max-width: 18%;
+}
+
+.flex-item-snapshots {
+  max-width: 32%;
+}
+
+/*mailchimp stuff*/
+#mc_embed_signup{
+    background:clear; 
+    color:#7a2259;
+    clear:left; 
+    font-family: 'Comfortaa', cursive;
+    width:100%;
+    
+}
+
+
+/*youtube stuff*/
+.videocontain {
+	position: relative;
+	padding-bottom: 56.1%;
+	height: 0;
+	overflow: hidden;
+}
+
+.videocontain iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* footer image */
+
+img { 
+    position: relative;
+    width: 100%; 
+    margin:0;
+    background-position: bottom center;
+}
+
+
+/* parallax stuff*/ 
+/*ITS WORKING DONT TOUCH!**/
+
+.keyart, .keyart_layer {
+	height: 63vw;
+    background-repeat: no-repeat;
+}
+
+.keyart {
+	position: relative;
+	z-index: -10;
+}
+
+.keyart_layer {
+	background-position: bottom center;
+	background-size: 100% auto;
+	width: 100%;
+}
+.keyart_layer.parallax {
+	position: fixed;
+}
+
+#keyart-0 {
+  background-image: url('smoke.png');
+}
+#keyart-1 {
+  background-image: url('moon.png');
+}
+#keyart-2 {
+  background-image: url('oracle.png');
+}
+#keyart-3 {
+  background-image: url('title.png');
+}
+#keyart-4 {
+  background-image: url('floor.png');
+}
+#keyart-5 {
+  background-image: url('credits.png');
+}
+
+/* mobile stuff*/
+
+@media only screen and (max-width: 500px){
+    #mainbody {
+    font-size: 4.5vw;
+    }
+    h1{
+        font-size: 5.5vw;
+    }
+    #gamedescription h1{
+        font-size: 5vw;
+    }
+    .flex-item-characters {
+        max-width: 20%;
+    }
+    .flex-item-snapshots {
+        max-width: 95%;
+    }
+    #extranotes{
+        font-size: 4.5vw;
+    }
+}
+h5 {
+    display: inline-block;
+}
+th, td {
+  /*font-style: */
+  color:#6e1616;
+  padding: 7px;
+  text-align:center;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  font-size: 3vw;
+    font-weight: bold;
+}
+a:hover{
+   color: #48738b;
+   
+}
+a{
+  text-decoration: none;
+  color:#6e1616;
+}
+
+h2{
+  color:#ffffff;
+  font-family: 'swswregular', cursive;
+    font-size: 5vw;
+    text-align:center;
+    padding-top: 0px;
+}
+
+.pgtitle {
+  text-align:center;
+  width: 70%;
+
+}
+.us {
+  float: left;
+  width: 50%;
+
+}
+*{
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}*/
+
+
+.n{
+  color:#ffffff;
+}
+.time{
+  color: #44b8b1;
+}
+
+h3{
+  color: #263d56;
+  font-size: 5vw;
+}
